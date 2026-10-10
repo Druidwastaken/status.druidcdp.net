@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" href="icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <title>Druidcdp.net - Status</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: #111;
+      font-family: Roboto, Arial, sans-serif;
+    }
+
+    .looping-container {
+      width: 100%;
+      max-width: 600px;
+      min-height: 250px;
+      margin: 40px auto;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      border: 2px solid purple;
+
+      background-image: url('https://raw.githubusercontent.com/Druidwastaken/druidcdp.net/main/checker.png');
+      background-repeat: repeat;
+      background-size: 16px 16px;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+
+      animation: diagonalMove 3s linear infinite;
+    }
+
+    @keyframes diagonalMove {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 16px 16px;
+      }
+    }
+
+    .container-content {
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 24px;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #EDAD0B;
+      text-align: center;
+
+      -webkit-text-stroke: 1px black;
+      paint-order: stroke fill;
+    }
+
+    .container-content h2 {
+      margin: 0;
+      font-size: 26px;
+      font-family: Roboto, Arial, sans-serif;
+    }
+
+    .transbox {
+      background-color: rgba(255, 0, 0, 0.6);
+      color: white;
+      padding: 3px 12px;
+      border-radius: 15px;
+      min-width: 90px;
+      font-family: Roboto, Arial, sans-serif;
+      -webkit-text-stroke: 0;
+    }
+
+    .transbox p {
+      margin: 0;
+    }
+
+    .container-content .issue {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .container-content a {
+      color: #FFD54A;
+      text-decoration: underline;
+      font-weight: bold;
+      transition: color 0.2s ease;
+      -webkit-text-stroke: 1px black;
+    }
+
+    .container-content a:hover {
+      color: #FFF3B0;
+    }
+
+    @media (max-width: 640px) {
+      .looping-container {
+        width: calc(100% - 24px);
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="looping-container">
+    <div class="container-content">
+      <h2>Druidcdp.net - Status</h2>
+
+      <br>
+
+      <div class="transbox">
+        <p>Druidcdp.net</p>
+      </div>
+
+      <p class="issue">
+        Currently experiencing issues<br>
+        Reason: Power Outage + Hardware difficulty
+      </p>
+    </div>
+  </div>
+</body>
+</html>
